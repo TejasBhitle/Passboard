@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/launcher_icon"
-        app:layout_constraintBottom_toBottomOf="@id/title"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.600"
-        android:contentDescription="@string/todo" />
+        android:contentDescription="@string/todo"
+        android:layout_margin="50dp"/>
 
     <TextView
         android:id="@+id/title"
@@ -24,13 +21,7 @@
         android:text="Passboard"
         android:textColor="@color/colorPrimary"
         android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/desc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.880" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/desc"
@@ -38,24 +29,12 @@
         android:layout_height="wrap_content"
         android:text="Simple Password Manager"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@id/google_signin_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.700" />
+        android:layout_margin="10dp"/>
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/google_signin_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="100dp"/>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
